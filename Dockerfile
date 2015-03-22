@@ -12,6 +12,7 @@ RUN apt-get install -y git libssl-dev libreadline-dev imagemagick libmagick++-de
 RUN git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv
 RUN mkdir -p /usr/local/rbenv/plugins
 RUN git clone https://github.com/sstephenson/ruby-build.git /usr/local/rbenv/plugins/ruby-build
+RUN git clone git://github.com/jf/rbenv-gemset.git /usr/local/rbenv/plugins/rbenv-gemset
 RUN /usr/local/rbenv/plugins/ruby-build/install.sh
 ENV PATH /usr/local/rbenv/bin:$PATH
 ENV RBENV_ROOT /usr/local/rbenv
