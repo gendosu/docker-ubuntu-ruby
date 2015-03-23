@@ -1,6 +1,6 @@
 # sshd
 #
-# VERSION               0.0.1
+# VERSION               0.0.2
 
 FROM     gendosu/ubuntu-ssh:latest
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
@@ -27,9 +27,9 @@ RUN echo 'eval "$(rbenv init -)"' >> .bashrc
 
 ENV CONFIGURE_OPTS --disable-install-doc
 
-RUN bash -l -c 'rbenv install 2.2.0'
+RUN bash -l -c 'rbenv install 2.2.1'
 
-RUN bash -l -c 'rbenv global 2.2.0'
+RUN bash -l -c 'rbenv global 2.2.1'
 
 RUN bash -l -c 'gem install bundler'
 
