@@ -7,7 +7,7 @@ MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
 RUN apt-get update
 
-RUN apt-get install -y git libssl-dev libreadline-dev imagemagick libmagick++-dev libqtwebkit-dev xvfb libffi-dev mysql-client libmysqlclient-dev
+RUN apt-get install -y git libssl-dev libreadline-dev imagemagick libmagick++-dev libqtwebkit-dev xvfb libffi-dev mysql-client libmysqlclient-dev libssl-dev
 
 RUN git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv
 RUN mkdir -p /usr/local/rbenv/plugins
