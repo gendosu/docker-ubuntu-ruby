@@ -3,6 +3,7 @@
 # VERSION               0.0.2
 
 FROM     gendosu/ubuntu-ssh:latest
+
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
 RUN apt-get update
