@@ -28,12 +28,11 @@ RUN echo 'eval "$(rbenv init -)"' >> .bashrc
 
 ENV CONFIGURE_OPTS --disable-install-doc
 
-RUN bash -l -c 'rbenv install 2.2.3'
+RUN eval "$(rbenv init -)"; rbenv install 2.2.3
 
-RUN bash -l -c 'rbenv global 2.2.3'
+RUN eval "$(rbenv init -)"; rbenv global 2.2.3
 
-RUN bash -l -c 'gem install bundler'
-
+RUN eval "$(rbenv init -)"; gem install bundler
 
 EXPOSE 22
 
