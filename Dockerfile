@@ -22,9 +22,9 @@ RUN echo 'export RBENV_ROOT=/usr/local/rbenv' >> /etc/profile.d/rbenv.sh
 RUN echo 'export PATH=/usr/local/rbenv/bin:$PATH' >> /etc/profile.d/rbenv.sh
 RUN echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
 
-RUN echo 'export RBENV_ROOT=/usr/local/rbenv' >> .bashrc
-RUN echo 'export PATH=/usr/local/rbenv/bin:$PATH' >> .bashrc
-RUN echo 'eval "$(rbenv init -)"' >> .bashrc
+RUN echo 'export RBENV_ROOT=/usr/local/rbenv' >> /root/.bashrc
+RUN echo 'export PATH=/usr/local/rbenv/bin:$PATH' >> /root/.bashrc
+RUN echo 'eval "$(rbenv init -)"' >> /root/.bashrc
 
 ENV CONFIGURE_OPTS --disable-install-doc
 
