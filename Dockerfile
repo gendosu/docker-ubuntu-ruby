@@ -34,6 +34,3 @@ RUN eval "$(rbenv init -)"; rbenv global 2.3.0
 
 RUN eval "$(rbenv init -)"; gem install bundler
 
-EXPOSE 22
-
-CMD ["/usr/bin/supervisord"]
