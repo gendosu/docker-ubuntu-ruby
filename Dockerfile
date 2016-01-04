@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.2
 
-FROM     gendosu/ubuntu-ssh:latest
+FROM     gendosu/ubuntu-base:latest
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
